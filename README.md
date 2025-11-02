@@ -10,8 +10,8 @@ This repository contains the source code and implementation of a causal recourse
 
 The proposed approach integrates:
 
-- 📊 Causal variable selection (via NOTEARS)
-- 🔍 Counterfactual reasoning using ICoNet neural architecture
+- 📊 Causal variable selection (via NOTEARS https://causalnex.readthedocs.io/en/0.4.2/causalnex.structure.notears.html)
+- 🔍 Counterfactual reasoning using ICoNet (Counterfactual inference with latent variable and its application in mental health care https://pubmed.ncbi.nlm.nih.gov/35125931/)
 - 🔧 Optimization with Simulated Annealing
 - ⚖️ Ethical constraints (e.g., penalization of immutable attributes)
 
@@ -52,6 +52,10 @@ Requirements include:
 - scikit-learn
 - matplotlib
 - pandas
+- torch==1.12.1
+- pytorch-lightning==1.7.7
+- torchmetrics==0.10.0
+- m atplotlib
 
 ---
 
