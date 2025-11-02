@@ -22,14 +22,16 @@ The proposed approach integrates:
 ```
 causal-recourse-mentalhealth/
 │
-├── data/                  # Instructions to access STAR*D dataset
-├── preprocessing/         # Scripts for data cleaning and IRT transformation
+├── baseline/              # Comparison baselines
 ├── causal_inference/      # NOTEARS implementation and causal graph analysis
+├── contrafactual_analise/ # Counterfactual analysis
+├── data/                  # Instructions to access STAR*D dataset
+├── IRT/ 				   # Item Response Theory
 ├── modeling/              # ICoNet and counterfactual generation
 ├── optimization/          # Simulated Annealing implementation
-├── notebooks/             # Jupyter Notebooks for experimentation
-├── utils/                 # Helper functions and visualizations
+├── preprocessing/         # Scripts for data cleaning and IRT transformation
 ├── results/               # Output files and evaluation metrics
+├── shap/             	   # SHapley Additive exPlanations
 └── README.md              # This file
 ```
 
@@ -64,18 +66,16 @@ Requirements include:
 1. Prepare your dataset (default: STAR*D) following the preprocessing instructions.
 2. Run the causal structure learning:
    ```bash
-   python causal_inference/build_dag.py
+   causal_inference/causalnex.py
    ```
 3. Train ICoNet and generate counterfactuals:
    ```bash
-   python modeling/train_iconet.py
+   python modeling/counterfactural_inference_GCN.py
    ```
 4. Apply Simulated Annealing to optimize recommendations:
    ```bash
-   python optimization/sa_runner.py
+   python optimization/simulacao_contrafactual_novos_individuosSN.py
    ```
-
-All configurations can be adjusted in `config.yaml`.
 
 ---
 
@@ -85,7 +85,6 @@ The framework is modular and can be adapted to other clinical or behavioral data
 
 - Format your dataset with appropriate features (categorical, ordinal or binary).
 - Define the causal graph or allow NOTEARS to infer it.
-- Adjust `config.yaml` and preprocessing scripts.
 
 ---
 

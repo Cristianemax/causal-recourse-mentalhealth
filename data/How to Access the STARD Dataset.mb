@@ -1,0 +1,42 @@
+📘 How to Access the STAR*D Dataset
+
+The data used in this project come from the Sequenced Treatment Alternatives to Relieve Depression (STAR*D) clinical study, conducted by the National Institute of Mental Health (NIMH).
+Due to ethical and privacy considerations, the raw data are not publicly available and must be requested directly from the authorized repository.
+
+🔹 Steps to Request Access
+
+Visit the NIMH Data Archive (NDA)
+ — Study ID: 2337 — "Sequenced Treatment Alternatives to Relieve Depression (STAR*D)".
+
+Create an account on the NDA platform (if you do not already have one).
+
+Submit a Data Access Request (DAR) specifying:
+
+The intended use of the data (e.g., academic research, reproducibility study, or clinical modeling);
+
+Your institutional affiliation;
+
+The project title and description (you may reference this repository as part of your research context).
+
+Once approved, you will receive instructions for securely downloading the dataset through the NDA portal.
+
+🔹 Ethical and Legal Considerations
+
+Access to the STAR*D dataset requires agreement with the NIMH Data Use Certification (DUC), which restricts redistribution of the data.
+
+Do not upload or share the raw dataset in any public repository or supplementary materials.
+
+Ensure all analyses comply with data protection regulations such as HIPAA, GDPR, or LGPD, depending on your jurisdiction.
+
+When publishing results based on STAR*D data, always cite the original study:
+
+Rush, A. J., et al. (2004). Sequenced Treatment Alternatives to Relieve Depression (STAR*D): Rationale and design. Controlled Clinical Trials, 25(1), 119–142. https://doi.org/10.1016/S0197-2456(03)00112-0
+
+🔹 Example Citation for Derived Work
+
+If you preprocess, clean, or transform the dataset for this project, please include a statement such as:
+
+“This work uses data obtained from the NIMH Data Archive (Study ID: 2337 — STAR*D). The dataset was accessed under an approved Data Use Certification (DUC). All analyses were conducted in accordance with NDA policies and data privacy regulations.”
+
+✅ Tip:
+For reproducibility, you may include a data_preparation.py script in your repository, showing the preprocessing pipeline, but never the raw data files themselves (e.g., .csv, .tsv, .sav).
