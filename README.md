@@ -108,8 +108,6 @@ Coverage: % individuals with generated recourse
 
 Number of reductions / increases in target
 
-Energy trace from SA
-
 ---
 🎯 Multi-Target Learning (Note & Justification)
 Why multi-target?
@@ -202,6 +200,7 @@ If you use this work, please cite:
   year={2004},
   doi={10.1016/S0197-2456(03)00112-0}
 }
+```
 ---
 
 ### 📬 Contact
