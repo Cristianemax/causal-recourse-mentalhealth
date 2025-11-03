@@ -1,42 +1,52 @@
-📘 How to Access the STAR*D Dataset
+🧠 How to Access the STAR*D Dataset
 
-The data used in this project come from the Sequenced Treatment Alternatives to Relieve Depression (STAR*D) clinical study, conducted by the National Institute of Mental Health (NIMH).
-Due to ethical and privacy considerations, the raw data are not publicly available and must be requested directly from the authorized repository.
+The Sequenced Treatment Alternatives to Relieve Depression (STAR*D) dataset is a large, multi-phase clinical study conducted by the National Institute of Mental Health (NIMH).
+It contains demographic, clinical, and psychometric information from approximately 4,000 patients diagnosed with major depressive disorder (MDD).
 
-🔹 Steps to Request Access
+Because the dataset includes sensitive clinical data, it is not publicly available. Researchers must request access directly from the NIMH Data Archive (NDA).
+
+🔐 Access Instructions
+
+To obtain access to the STAR*D dataset, follow these steps:
 
 Visit the NIMH Data Archive (NDA)
- — Study ID: 2337 — "Sequenced Treatment Alternatives to Relieve Depression (STAR*D)".
+.
 
-Create an account on the NDA platform (if you do not already have one).
+Log in using an existing NDA account or create a new one.
 
-Submit a Data Access Request (DAR) specifying:
+In the search bar, type:
+“STAR*D - Sequenced Treatment Alternatives to Relieve Depression (PDS000001)”.
 
-The intended use of the data (e.g., academic research, reproducibility study, or clinical modeling);
+Open the study page and click “Request Access”.
 
-Your institutional affiliation;
+Complete the Data Access Request (DAR) form, describing your research purpose and how you intend to use the dataset.
 
-The project title and description (you may reference this repository as part of your research context).
+Wait for approval from the NIMH Data Access Committee.
 
-Once approved, you will receive instructions for securely downloading the dataset through the NDA portal.
+Once approved, download the dataset in .CSV or .SAS format.
 
-🔹 Ethical and Legal Considerations
+Place the files in the data/ directory of this repository.
 
-Access to the STAR*D dataset requires agreement with the NIMH Data Use Certification (DUC), which restricts redistribution of the data.
+Update your environment path or configuration file to point to the local dataset location.
 
-Do not upload or share the raw dataset in any public repository or supplementary materials.
+⚠️ Ethical notice:
+The STAR*D dataset contains sensitive information related to mental health and patient treatment outcomes.
+Before using the data, ensure compliance with all applicable regulations — including the LGPD (Brazilian General Data Protection Law) and the GDPR (European Union General Data Protection Regulation).
 
-Ensure all analyses comply with data protection regulations such as HIPAA, GDPR, or LGPD, depending on your jurisdiction.
+⚙️ Data Overview
 
-When publishing results based on STAR*D data, always cite the original study:
+The STAR*D dataset includes:
 
-Rush, A. J., et al. (2004). Sequenced Treatment Alternatives to Relieve Depression (STAR*D): Rationale and design. Controlled Clinical Trials, 25(1), 119–142. https://doi.org/10.1016/S0197-2456(03)00112-0
+Demographic information (age, gender, education, marital status);
 
-🔹 Example Citation for Derived Work
+Clinical evaluations (HAM-D, QIDS, and other depression severity scales);
 
-If you preprocess, clean, or transform the dataset for this project, please include a statement such as:
+Treatment information across multiple phases;
 
-“This work uses data obtained from the NIMH Data Archive (Study ID: 2337 — STAR*D). The dataset was accessed under an approved Data Use Certification (DUC). All analyses were conducted in accordance with NDA policies and data privacy regulations.”
+Psychometric and cognitive test scores;
 
+Family and substance use history.
+
+This diversity of variables allows both cross-sectional and longitudinal analyses, supporting advanced predictive modeling in mental health.
 ✅ Tip:
 For reproducibility, you may include a data_preparation.py script in your repository, showing the preprocessing pipeline, but never the raw data files themselves (e.g., .csv, .tsv, .sav).
